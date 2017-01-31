@@ -29,7 +29,7 @@ article {
   position: relative;
 }
 
-.banner.hero { background-image: url(./assets/hero.jpg); }
+.banner.hero { background-image: url(./assets/img2.jpg); }
 .banner.news { background-image: url(./assets/img1.jpg); }
 .banner.events { background-image: url(./assets/img3.jpg); }
 
@@ -47,7 +47,7 @@ article {
   left: auto;
 }
 
-.banner.events h3 {
+.banner h3 {
   color: #fff;
   position: absolute;
   left: 50px;

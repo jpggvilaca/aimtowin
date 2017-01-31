@@ -11,6 +11,12 @@ class App extends Component {
           <article>
             <div className="banner hero">
               <h1>ATW-ESPORTS</h1>
+              <h3>
+                Bem-vindo à ATW-ESPORTS, a Aim To Win eSports é uma organização
+                que promove<br/> os desportos eletrónicos dedicando-se ao
+                desenvolvimento de competições <br/>de caráter profissional nas mais
+                diversas modalidades.
+              </h3>
             </div>
             <div className="banner news">
               <h1>Notícias</h1>

@@ -7,7 +7,7 @@ const Footer = () => {
       <article>
         &copy; 2017 AimToWin
         <p>Telemóvel: 918129786</p>
-        <a href="#">Email: aimtowin@gmail.pt</a>
+        <a href="mailto:aimtowin@gmail.pt">Email: aimtowin@gmail.pt</a>
       </article>
     </footer>
   )
