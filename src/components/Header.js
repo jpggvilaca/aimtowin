@@ -18,6 +18,9 @@ const Header = () => {
           <li>
             <a href="#" >Patrocinadores</a>
           </li>
+          <li>
+            <a href="#" >Contactos</a>
+          </li>
         </ul>
       </header>
     </article>
