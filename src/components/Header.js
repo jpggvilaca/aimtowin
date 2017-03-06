@@ -1,26 +1,19 @@
 import React from 'react'
 import './Header.css'
+import { navigation } from '../common'
 
 const Header = () => {
   return (
     <article>
       <header>
         <ul>
-          <li>
-            <a href="#" >Início</a>
-          </li>
-          <li>
-            <a href="#" >Notícias</a>
-          </li>
-          <li>
-            <a href="#" >Eventos</a>
-          </li>
-          <li>
-            <a href="#" >Patrocinadores</a>
-          </li>
-          <li>
-            <a href="#" >Contactos</a>
-          </li>
+          {navigation.map((navItem, i) => {
+            return (
+              <li key={i}>
+                <a href={'#' + navItem.id}>{navItem.name}</a>
+              </li>
+            )
+          })}
         </ul>
       </header>
     </article>
