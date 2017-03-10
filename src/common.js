@@ -30,13 +30,11 @@ export const banners = [
   {
     class: 'news',
     id: 'noticias',
-    title: 'Notícias',
     content: ''
   },
   {
     class: 'events',
     id: 'eventos',
-    title: 'Eventos',
     content: 'MESC 7 e 8 de Abril<br/>Digital Games Lab (Campus do IPCA, Barcelos)'
   }
 ]

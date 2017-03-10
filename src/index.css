@@ -1,4 +1,5 @@
 body {
+  background-color: #000;
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
   padding: 0;
@@ -28,15 +29,16 @@ article {
 
 .banner {
   background-position: center;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-top: 1px solid white;
   height: 550px;
   position: relative;
 }
 
-.banner.hero { background-image: url(./assets/img2.jpg); }
-.banner.news { background-image: url(./assets/img1.jpg); }
-.banner.events { background-image: url(./assets/img3.jpg); }
+.banner.hero { background-image: url(./assets/CAPA-LOGOG.jpg); }
+.banner.news { background-image: url(./assets/CAPASLOGO.jpg); }
+/*.banner.events { background-image: url(./assets/img3.jpg); }*/
 
 .banner h1 {
   background-color: #fff;
@@ -48,14 +50,24 @@ article {
 }
 
 .banner.news h1 {
-  right: 0;
   left: auto;
+  right: 0;
 }
 
 .banner h3 {
+  background-color: #000;
   color: #fff;
-  position: absolute;
   left: 50px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  opacity: 0.85;
+  padding: 10px 20px;
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(100%);
+}
+
+.map-section {
+  height: 400px;
+  width: 100%;
 }

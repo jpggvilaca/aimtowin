@@ -6,7 +6,6 @@ const Footer = () => {
     <footer>
       <article>
         &copy; 2017 AimToWin
-        <a href="mailto:aimtowin@gmail.pt">Email: aimtowin@gmail.pt</a>
       </article>
     </footer>
   )
