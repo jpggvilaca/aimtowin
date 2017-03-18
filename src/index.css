@@ -27,15 +27,6 @@ article {
   max-width: 1360px;
 }
 
-.banner {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top: 1px solid white;
-  height: 550px;
-  position: relative;
-}
-
 .map-section {
   height: 400px;
   width: 100%;

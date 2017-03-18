@@ -17,26 +17,39 @@ class SideBySide extends Component {
     this.setState({ isReading: !this.state.isReading})
   }
 
+  componentDidMount() {
+    !this.props.has_readmore
+      ? this.setState({ isReading: true})
+      : null
+  }
+
   render() {
     let rm = this.state.isReading
-    const { title, css_class, content, readmore_content } = this.props
-
-    console.log(rm);
+    const {
+      title,
+      css_class,
+      content,
+      section_title,
+      has_readmore,
+      readmore_content
+    } = this.props
 
     const $content = <div className="info">
       <h3 className="info-title">{title}</h3>
       <p className="info-content">{content}</p>
-      <span className="rm" onClick={this.readMore}>Ler Menos</span>
+      {has_readmore ?
+        <span className="rm" onClick={this.readMore}>Ler Menos</span> : null}
     </div>
 
     const $readMoreContent = <div className="info readmore">
       <h3 className="info-title">{title}</h3>
       <p className="info-content">{readmore_content}</p>
-      <span className="rm" onClick={this.readMore}>Ler Mais</span>
+      {has_readmore ? <span className="rm" onClick={this.readMore}>Ler Mais</span> : null}
     </div>
 
     return (
       <div className='sbs'>
+        <h3 className="section-title">{section_title}</h3>
         <div className={"img-left " + css_class}></div>
         {rm ? $content : $readMoreContent}
       </div>

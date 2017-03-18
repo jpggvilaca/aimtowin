@@ -5,7 +5,7 @@ import Banner from './components/Banner'
 import SideBySide from './components/SideBySide'
 import Map from './components/Map'
 
-import { banners, droneNews } from './common'
+import { banners, droneNews, eventNews } from './common'
 
 class App extends Component {
   render() {
@@ -15,13 +15,6 @@ class App extends Component {
       title={banners[0].title}
       section_title={banners[0].section_title}
       content={banners[0].content}
-    />
-    const $eventsBanner = <Banner
-      class={banners[1].class}
-      id={banners[1].id}
-      title={banners[1].title}
-      section_title={banners[1].section_title}
-      content={banners[1].content}
     />
 
     return (
@@ -36,11 +29,19 @@ class App extends Component {
               title={droneNews.title}
               css_class={droneNews.css_class}
               content={droneNews.content}
+              section_title={droneNews.section_title}
               readmore_content={droneNews.readmore_content}
+              has_readmore={droneNews.has_readmore}
             />
           </article>
           <article>
-            {$eventsBanner}
+          <SideBySide
+            title={eventNews.title}
+            css_class={eventNews.css_class}
+            content={eventNews.content}
+            section_title={eventNews.section_title}
+            has_readmore={eventNews.has_readmore}
+          />
           </article>
           <article>
             <Map />

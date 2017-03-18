@@ -2,22 +2,37 @@
   background-color: #000;
   display: flex;
   height: 580px;
+  position: relative;
+  padding: 20px;
+}
+
+.sbs .section-title {
+  color: #fff;
+  font-size: 36px;
+  left: 40px;
+  position: absolute;
+  top: 20px;
 }
 
 .img-left {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
   flex: 0 1 50%;
   height: 100%;
 }
 
 .img-left.drone {
   background-image: url(../assets/logo_drone.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+.img-left.mainevent {
+  background-image: url(../assets/logoescudo.png);
 }
 
 .info {
   padding: 40px;
+  padding-top: 100px;
   color: #fff;
   flex: 0 1 50%;
 }
