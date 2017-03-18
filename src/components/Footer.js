@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <article>
-        &copy; 2017 AimToWin
+        &copy; 2017 AimToWin eSports
       </article>
     </footer>
   )

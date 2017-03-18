@@ -1,0 +1,42 @@
+.sbs {
+  background-color: #000;
+  display: flex;
+  height: 580px;
+}
+
+.img-left {
+  flex: 0 1 50%;
+  height: 100%;
+}
+
+.img-left.drone {
+  background-image: url(../assets/logo_drone.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info {
+  padding: 40px;
+  color: #fff;
+  flex: 0 1 50%;
+}
+
+.info-title {
+  margin-bottom: 40px;
+}
+
+.info-content {
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.info .rm {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.info .rm:hover {
+  cursor:pointer;
+  opacity: .89;
+}

@@ -1,0 +1,31 @@
+.banner.hero { background-image: url(../assets/CAPA-LOGOG.jpg); }
+.banner.news { background-image: url(../assets/CAPASLOGO.jpg); }
+/*.banner.events { background-image: url(./assets/img3.jpg); }*/
+
+.banner h1 {
+  background-color: #fff;
+  display: inline-block;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.banner.news h1 {
+  left: auto;
+  right: 0;
+}
+
+.banner h3 {
+  background-color: #000;
+  color: #fff;
+  left: 50px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  max-width: 500px;
+  opacity: 0.85;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(100%);
+}

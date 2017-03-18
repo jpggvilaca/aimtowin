@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
+import React, { Component } from 'react'
+import GoogleMapReact from 'google-map-react'
+
+import GM_APIKEY from '../config'
 
 export default class Map extends Component {
   static defaultProps = {
@@ -13,6 +15,13 @@ export default class Map extends Component {
         <GoogleMapReact
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
+          options={
+            { scrollwheel: false }
+          }
+          bootstrapURLKeys={{
+            key: GM_APIKEY,
+            language: 'pt'
+          }}
         />
       </div>
     );
