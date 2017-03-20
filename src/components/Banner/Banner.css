@@ -1,0 +1,53 @@
+.banner {
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid white;
+  display: flex;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  transition: all 1.2s ease;
+}
+
+.banner.hero { background-image: url(../../assets/CAPA-LOGOG.jpg); }
+.banner.events { background-image: url(../../assets/logo_drone.png); }
+
+.banner h3 {
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  left: 50px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  max-width: 500px;
+  opacity: 0.85;
+  position: absolute;
+  bottom: 100px;
+  padding: 10px 20px;
+  will-change: left;
+}
+
+.banner.animating {
+  animation: zoom 7.5s ease;
+}
+
+.banner.animating h3 {
+  animation: text .7s ease-in-out;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes text {
+    0% { left: -50px; }
+    100% { left: 40px; }
+}

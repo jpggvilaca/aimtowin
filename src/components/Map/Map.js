@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import GoogleMapReact from 'google-map-react'
 
-import GM_APIKEY from '../config'
+import GM_APIKEY from '../../config'
 
 export default class Map extends Component {
   static defaultProps = {

@@ -23,11 +23,11 @@
 }
 
 .img-left.drone {
-  background-image: url(../assets/logo_drone.png);
+  background-image: url(../../assets/logo_drone.png);
 }
 
 .img-left.mainevent {
-  background-image: url(../assets/logoescudo.png);
+  background-image: url(../../assets/logoescudo.png);
 }
 
 .info {
