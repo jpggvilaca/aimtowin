@@ -1,9 +1,11 @@
 {
-  "main.css": "static/css/main.1d89fd96.css",
-  "main.css.map": "static/css/main.1d89fd96.css.map",
-  "main.js": "static/js/main.776512af.js",
-  "main.js.map": "static/js/main.776512af.js.map",
-  "static/media/CAPA-LOGOG.jpg": "static/media/CAPA-LOGOG.b2d7e4b5.jpg",
+  "main.css": "static/css/main.7cb18577.css",
+  "main.css.map": "static/css/main.7cb18577.css.map",
+  "main.js": "static/js/main.820bfbd5.js",
+  "main.js.map": "static/js/main.820bfbd5.js.map",
+  "static/media/CAPASLOGO.jpg": "static/media/CAPASLOGO.63503faf.jpg",
+  "static/media/header_logo.png": "static/media/header_logo.d6dba898.png",
   "static/media/logo_drone.png": "static/media/logo_drone.edf24269.png",
-  "static/media/logoescudo.png": "static/media/logoescudo.4781c43d.png"
+  "static/media/logoescudo.png": "static/media/logoescudo.4781c43d.png",
+  "static/media/mainlogo_trans.png": "static/media/mainlogo_trans.581c5764.png"
 }
