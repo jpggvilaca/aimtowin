@@ -1,8 +1,22 @@
 footer {
+  margin-top: 10px;
+}
+
+footer article {
+  display: flex;
   color: #fff;
   padding: 30px 50px;
+  justify-content: space-between;
 }
 
 footer p {
   margin: 10px 0;
+}
+
+footer h4 {
+  margin-bottom: 20px;
+}
+
+footer li {
+  font-size: 14px;
 }

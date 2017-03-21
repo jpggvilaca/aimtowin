@@ -1,9 +1,10 @@
 .sbs {
   background-color: #000;
+  border-top: 1px solid #fff;
   display: flex;
   height: 580px;
-  position: relative;
   padding: 20px;
+  position: relative;
 }
 
 .sbs .section-title {
@@ -14,12 +15,23 @@
   top: 20px;
 }
 
+.sbs a {
+  flex: 0 1 50%;
+  margin-top: 90px;
+  height: 420px;
+}
+
 .img-left {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 90%;
-  flex: 0 1 50%;
+  background-size: contain;
   height: 100%;
+}
+
+.img-left.no-hyperlink {
+  flex: 0 1 50%;
+  margin-top: 90px;
+  height: 420px;
 }
 
 .img-left.drone {
@@ -42,7 +54,7 @@
 }
 
 .info-content {
-  line-height: 20px;
+  line-height: 26px;
   margin-bottom: 12px;
 }
 

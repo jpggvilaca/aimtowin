@@ -8,9 +8,14 @@ body {
 ul,
 p,
 h1,
-h3 {
+h3,
+h4 {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -24,10 +29,10 @@ main {
 
 article {
   margin: 0 auto;
-  max-width: 1360px;
+  /* max-width: 1360px; this might me needed in the future */
 }
 
 .map-section {
-  height: 400px;
+  height: 480px;
   width: 100%;
 }

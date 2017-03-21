@@ -12,6 +12,7 @@ export default class Map extends Component {
   render() {
     return (
       <div className="map-section">
+        <h3>Localização</h3>
         <GoogleMapReact
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}

@@ -1,11 +1,8 @@
 import React from 'react'
 
-import $ from 'jquery'
 import './Header.css'
 import { navigation } from '../common'
 
-
-// TODO: jquery to help navigation
 const Header = () => {
   return (
     <header>
@@ -13,7 +10,7 @@ const Header = () => {
       <ul>
         {navigation.map((navItem, i) => {
           return (
-            <li key={i}>
+            <li key={i} className="link">
               <a href={'#' + navItem.id}>{navItem.name}</a>
             </li>
           )
