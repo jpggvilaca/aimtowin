@@ -69,9 +69,10 @@ class App extends Component {
             <SideBySide
               title={eventNews.title}
               css_class={eventNews.css_class}
-              content={eventNews.content}
+              content={eventNews.readmore_content}
               section_title={eventNews.section_title}
               has_readmore={eventNews.has_readmore}
+              readmore_content={eventNews.content}
             />
           </article>
           <article id="location">

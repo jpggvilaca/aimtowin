@@ -25,7 +25,7 @@ export default class Map extends Component {
       <div className="map-section">
         <h3>Localização MESC</h3>
         <GoogleMapReact
-          apiKey={GM_APIKEY}
+          bootstrapURLKeys={{key: GM_APIKEY}}
           zoom={11}
           center={{lat: 41.541720, lng: -8.422543}}
           scrollwheel={false}
