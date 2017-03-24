@@ -1,12 +1,10 @@
 footer {
-  margin-top: 10px;
-}
-
-footer article {
+  color: #111;
+  background-color: #fff;
   display: flex;
-  color: #fff;
-  padding: 30px 50px;
   justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px 50px;
 }
 
 footer p {
@@ -15,8 +13,73 @@ footer p {
 
 footer h4 {
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 footer li {
   font-size: 14px;
+}
+
+footer .contacts {
+  max-width: 300px;
+}
+
+footer .contacts  li {
+  padding: 5px 0;
+}
+
+footer .contacts li > div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 16px;
+  margin-bottom: -2px;
+  margin-right: 6px;
+  width: 16px;
+}
+
+.atwmail > div {
+  background-image: url('../../assets/mail.png')
+}
+
+.fb > div {
+  background-image: url('../../assets/fb.png')
+}
+
+
+footer .logos {
+  align-items: center;
+  display: flex;
+}
+
+footer .logos::before {
+  content: 'Powered by'
+}
+
+footer .alientech div {
+  background-image: url('../../assets/alientech.png');
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35px;
+  width: 60px;
+}
+
+footer .ipca div {
+  background-image: url('../../assets/ipca.png');
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35px;
+  width: 60px;
+}
+
+footer .ca div {
+  background-image: url('../../assets/calogo.jpg');
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35px;
+  width: 60px;
 }

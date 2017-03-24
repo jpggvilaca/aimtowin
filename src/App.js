@@ -10,7 +10,7 @@ import Map from './components/Map/Map'
 import { navigation, droneNews, eventNews } from './components/common'
 
 class App extends Component {
-  heroBannerAnimation() {
+  Animations() {
     const banner = $('.hero')
 
     if(banner) {
@@ -22,7 +22,7 @@ class App extends Component {
     const links = document.getElementsByClassName('link')
 
     $(links).each((i, link) => {
-      $(link).click(function () {
+      $(link).click(() => {
         $('html, body').animate({
             scrollTop: $('#' + navigation[i].id).offset().top - 70
         }, 1200)
@@ -30,9 +30,20 @@ class App extends Component {
     })
   }
 
+  scrollDown() {
+    const sdown = $('.scrolldown')
+
+    sdown.on('click', () => {
+      $('html, body').animate({
+          scrollTop: $('#news').offset().top - 70
+      }, 900)
+    })
+  }
+
   componentDidMount() {
-    this.heroBannerAnimation()
+    this.Animations()
     this.scrollToHandler()
+    this.scrollDown()
   }
 
   render() {
@@ -63,7 +74,7 @@ class App extends Component {
               has_readmore={eventNews.has_readmore}
             />
           </article>
-          <article id="map_section">
+          <article id="location">
             <Map />
           </article>
           <Footer />

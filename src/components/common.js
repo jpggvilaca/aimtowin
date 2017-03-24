@@ -9,12 +9,12 @@ export const navigation = [
   },
   {
     name: 'Contactos',
-    id: 'contacts'
+    id: 'location'
   },
-  {
-    name: 'Sobre',
-    id: 'about'
-  },
+  // {
+  //   name: 'Sobre',
+  //   id: 'about'
+  // },
 ]
 
 export const droneNews = {
