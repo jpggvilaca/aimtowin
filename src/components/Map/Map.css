@@ -2,6 +2,7 @@
   color: #fff;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .map-section h3 {
@@ -20,9 +21,14 @@
 
 .map-section .address a {
   color: #fff;
+  font-size: 14px;
 }
 
 .map-section .address p {
+  font-size: 16px;
+}
+
+.map-section .address p + p {
   font-size: 14px;
 }
 

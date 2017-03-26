@@ -35,7 +35,6 @@ export default class Map extends Component {
         <div className="address">
           <h4>Informação</h4>
           <p>Morada:</p>
-          <br />
           <p>Av. Dr. Francisco Pires Gonçalves,</p>
           <p>4711-909 Braga</p>
           <br />
