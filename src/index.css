@@ -31,23 +31,3 @@ article {
   margin: 0 auto;
   /* max-width: 1360px; this might me needed in the future */
 }
-
-.map-section h3 {
-  color: #fff;
-  font-size: 36px;
-  margin: 0 0 50px 40px;
-}
-
-.map-section h3 + div {
-  width: 100%;
-  height: 360px !important;
-}
-
-.map-section .place {
-  border: 1px solid #de1c2a;
-  border-radius: 50%;
-  font-size: 14px;
-  padding: 5px;
-  width: 37px;
-  z-index: 1;
-}

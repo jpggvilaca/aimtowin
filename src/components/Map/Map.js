@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import GoogleMapReact from 'google-map-react'
 
+import './Map.css'
 import GM_APIKEY from '../../config'
 import mapStyles from './mapStyles'
 
 const Place = () => {
   return (
-    <div className="place">
-      MESC
-    </div>
+    <div className="place">MESC</div>
   )
 }
 
@@ -33,6 +32,20 @@ export default class Map extends Component {
         >
         <Place lat={41.541720} lng={-8.411543} />
         </GoogleMapReact>
+        <div className="address">
+          <h4>Informação</h4>
+          <p>Morada:</p>
+          <br />
+          <p>Av. Dr. Francisco Pires Gonçalves,</p>
+          <p>4711-909 Braga</p>
+          <br />
+          <p>Site oficial:</p>
+          <a href="http://www.investbraga.com/peb/" target="_blank">www.investbraga.com</a>
+          <br/>
+          <br />
+          <p>Facebook:</p>
+          <a href="https://www.facebook.com/pebbraga/" target="_blank">https://www.facebook.com/pebbraga/</a>
+        </div>
       </div>
     );
   }
