@@ -25,6 +25,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  opacity: 1;
+  will-change: opacity;
   height: 100%;
 }
 

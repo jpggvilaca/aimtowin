@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import Banner from './components/Banner/Banner'
 import SideBySide from './components/SideBySide/SideBySide'
 import Map from './components/Map/Map'
+import Waypoint from 'react-waypoint'
 
 import { navigation, droneNews, eventNews } from './components/common'
 
@@ -16,6 +17,11 @@ class App extends Component {
     if(banner) {
       banner.addClass('animating')
     }
+  }
+
+  _handleEnter({ previousPosition, currentPosition, event }) {
+    $('.img-left').addClass('opacity-animation')
+    $('.sbs .info').addClass('comeup-animation')
   }
 
   scrollToHandler() {
@@ -54,17 +60,19 @@ class App extends Component {
           <article id="home">
             <Banner />
           </article>
-          <article id="news">
-            <SideBySide
-              title={droneNews.title}
-              css_class={droneNews.css_class}
-              content={droneNews.content}
-              section_title={droneNews.section_title}
-              readmore_content={droneNews.readmore_content}
-              has_readmore={droneNews.has_readmore}
-              has_hyperlink={droneNews.has_hyperlink}
-            />
-          </article>
+          <Waypoint topOffset={500} onEnter={this._handleEnter}>
+            <article id="news">
+              <SideBySide
+                title={droneNews.title}
+                css_class={droneNews.css_class}
+                content={droneNews.content}
+                section_title={droneNews.section_title}
+                readmore_content={droneNews.readmore_content}
+                has_readmore={droneNews.has_readmore}
+                has_hyperlink={droneNews.has_hyperlink}
+              />
+            </article>
+          </Waypoint>
           <article id="events">
             <SideBySide
               title={eventNews.title}

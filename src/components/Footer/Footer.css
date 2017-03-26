@@ -54,7 +54,7 @@ footer .logos {
 }
 
 footer .logos::before {
-  content: 'Powered by'
+  content: 'powered by'
 }
 
 footer .alientech div {
