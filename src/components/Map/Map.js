@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react'
 
 import './Map.css'
 import GM_APIKEY from '../../config'
-import mapStyles, { mapStylesTwo } from './mapStyles'
+import mapStyles from './mapStyles'
 
 const Place = () => {
   return (
@@ -14,19 +14,23 @@ const Place = () => {
 export default class Map extends Component {
   createMapOptions(maps) {
     return {
-      // mapTypeControl: false,
       scrollwheel: false,
       zoom: 11,
       center: [41.541720, -8.422543],
-      styles: mapStylesTwo
+      styles: mapStyles
     }
   }
 
   render() {
+    let center = [41.541720, -8.422543]
+    let zoom = 11
+
     return (
       <div className="map-section">
-        <h3>Localização MESC</h3>
+        <h3>Localização</h3>
         <GoogleMapReact
+          defaultCenter={center}
+          defaultZoom={zoom}
           bootstrapURLKeys={{key: GM_APIKEY}}
           options={this.createMapOptions}
         >

@@ -12,7 +12,7 @@ export const navigation = [
     id: 'location'
   },
   {
-    name: 'Patrocinio',
+    name: 'Patrocinadores',
     id: 'sponsors'
   },
 ]

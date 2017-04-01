@@ -32,6 +32,10 @@ article {
   /* max-width: 1360px; this might me needed in the future */
 }
 
+#home {
+  overflow: hidden;
+}
+
 .sponsors {
   background-color: #fff;
   color: #111;
