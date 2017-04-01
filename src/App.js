@@ -83,6 +83,29 @@ class App extends Component {
               readmore_content={eventNews.content}
             />
           </article>
+          <article id="sponsors">
+            <div className="sponsors">
+              <h3>Patrocinadores</h3>
+              <div>
+              <ul>
+                <li>
+                  <a className="ipca_logo" href="http://www.ipca.pt/"></a>
+                </li>
+                <li>
+                  <a className="camara_logo" href="https://www.cm-braga.pt/pt"></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a className="invest_logo" href="http://investbraga.com/index/index.php"></a>
+                </li>
+                <li>
+                  <a className="aiminho_logo" href="http://www.aiminho.pt/"></a>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </article>
           <article id="location">
             <Map />
           </article>

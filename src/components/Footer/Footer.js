@@ -21,20 +21,27 @@ const Footer = () => {
                 inscricoes@atwesports.com
               </a>
             </li>
+            <li className="atwmail">
+              <div></div>
+              <a href="mailto:idrone@aiminho.pt">
+                idrone@aiminho.pt
+              </a>
+            </li>
             <li className="fb">
               <div></div>
               <a href="https://www.facebook.com/Minhoesportscup/">
                 Minho Esports Cup
               </a>
             </li>
+            <li className="fb">
+              <div></div>
+              <a href="https://www.facebook.com/IDroneExperience/">
+                iDrone Experience
+              </a>
+            </li>
           </ul>
         </div>
         <ul className="logos">
-          <li className="ipca">
-            <a href="https://ipca.pt/" target="_blank">
-              <div></div>
-            </a>
-          </li>
           <li className="alientech">
             <a href="https://www.alientech.pt/" target="_blank">
               <div></div>

@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react'
 
 import './Map.css'
 import GM_APIKEY from '../../config'
-import mapStyles from './mapStyles'
+import mapStyles, { mapStylesTwo } from './mapStyles'
 
 const Place = () => {
   return (
@@ -12,11 +12,14 @@ const Place = () => {
 }
 
 export default class Map extends Component {
-  static defaultProps = {
-    zoom: 11,
-    center: [41.541720, -8.422543],
-    scrollwheel: false,
-    styles: mapStyles
+  createMapOptions(maps) {
+    return {
+      // mapTypeControl: false,
+      scrollwheel: false,
+      zoom: 11,
+      center: [41.541720, -8.422543],
+      styles: mapStylesTwo
+    }
   }
 
   render() {
@@ -25,10 +28,7 @@ export default class Map extends Component {
         <h3>Localização MESC</h3>
         <GoogleMapReact
           bootstrapURLKeys={{key: GM_APIKEY}}
-          zoom={11}
-          center={{lat: 41.541720, lng: -8.422543}}
-          scrollwheel={false}
-          styles={mapStyles}
+          options={this.createMapOptions}
         >
         <Place lat={41.541720} lng={-8.411543} />
         </GoogleMapReact>
@@ -40,11 +40,11 @@ export default class Map extends Component {
           <p>4711-909 Braga</p>
           <br />
           <p>Site oficial:</p>
-          <a href="http://www.investbraga.com/peb/" target="_blank">www.investbraga.com</a>
+          <a href="http://www.idroneexperience.com/" target="_blank">www.idroneexperience.com</a>
           <br/>
           <br />
           <p>Facebook:</p>
-          <a href="https://www.facebook.com/pebbraga/" target="_blank">https://www.facebook.com/pebbraga/</a>
+          <a href="https://www.facebook.com/IDroneExperience/" target="_blank">facebook.com/IDroneExperience</a>
         </div>
       </div>
     );

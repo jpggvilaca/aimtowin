@@ -66,15 +66,6 @@ footer .alientech div {
   width: 60px;
 }
 
-footer .ipca div {
-  background-image: url('../../assets/ipca.png');
-  background-position: contain;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 35px;
-  width: 60px;
-}
-
 footer .ca div {
   background-image: url('../../assets/calogo.jpg');
   background-position: contain;

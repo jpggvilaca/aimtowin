@@ -32,6 +32,66 @@ article {
   /* max-width: 1360px; this might me needed in the future */
 }
 
+.sponsors {
+  background-color: #fff;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  height: 580px;
+  padding: 30px 40px;
+}
+
+.sponsors > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.sponsors h3 {
+  font-size: 36px;
+}
+
+.sponsors ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors ul + ul {
+  margin-top: 40px;
+}
+
+.sponsors li {
+  flex: 0 1 50%;
+}
+
+.sponsors li a {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 140px;
+  width: 100%;
+}
+
+.sponsors .ipca_logo {
+  background-image: url('./assets/ipca.png');
+}
+
+.sponsors .camara_logo {
+  background-image: url('./assets/cmb.png');
+}
+
+.sponsors .invest_logo {
+  background-image: url('./assets/invest.png');
+}
+
+.sponsors .aiminho_logo {
+  background-image: url('./assets/aiminho.png');
+}
+
 /* Animations*/
 .opacity-animation {
   animation: opacityChange 4s ease;

@@ -11,10 +11,10 @@ export const navigation = [
     name: 'Contactos',
     id: 'location'
   },
-  // {
-  //   name: 'Sobre',
-  //   id: 'about'
-  // },
+  {
+    name: 'Patrocinio',
+    id: 'sponsors'
+  },
 ]
 
 export const droneNews = {
