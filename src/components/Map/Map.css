@@ -13,6 +13,7 @@
 
 .map-section .address {
   padding: 10px 20px;
+  margin-left: 20px;
 }
 
 .map-section .address h4 {
@@ -33,8 +34,8 @@
 }
 
 .map-section h3 + div {
-  width: 600px !important;
-  height: 360px !important;
+  width: 860px !important;
+  height: 430px !important;
 }
 
 .map-section .place {

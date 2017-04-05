@@ -41,7 +41,7 @@ article {
   color: #111;
   display: flex;
   flex-direction: column;
-  height: 580px;
+  height: 860px;
   padding: 30px 40px;
 }
 
@@ -55,16 +55,41 @@ article {
 
 .sponsors h3 {
   font-size: 36px;
+  margin-bottom: 40px;
 }
 
 .sponsors ul {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 30px 20px;
+  position: relative;
+  -webkit-box-shadow: -5px -5px 5px 0px rgba(197,86,30,1);
+  -moz-box-shadow: -5px -5px 5px 0px rgba(197,86,30,1);
+  box-shadow: -5px -5px 5px 0px rgba(197,86,30,1);
+}
+
+.sponsors ul::before {
+  position: absolute;
+  top: -35px;
+  left: -5px;
+  font-size: 26px;
+}
+
+.sponsors .promotores::before {
+  content: 'Promotores';
+}
+
+.sponsors .powered_by::before {
+  content: 'Powered by';
+}
+
+.sponsors .patrocinadores::before {
+  content: 'Patrocinadores';
 }
 
 .sponsors ul + ul {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .sponsors li {
@@ -94,6 +119,18 @@ article {
 
 .sponsors .aiminho_logo {
   background-image: url('./assets/aiminho.png');
+}
+
+.sponsors .alientech_logo {
+  background-image: url('./assets/alientech.png');
+}
+
+.sponsors .atw_logo {
+  background-image: url('./assets/header_logo.png');
+}
+
+.sponsors .ca_logo {
+  background-image: url('./assets/calogo.jpg');
 }
 
 /* Animations*/

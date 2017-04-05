@@ -85,23 +85,34 @@ class App extends Component {
           </article>
           <article id="sponsors">
             <div className="sponsors">
-              <h3>Patrocinadores</h3>
+              <h3>Organização</h3>
               <div>
-              <ul>
+              <ul className="promotores">
                 <li>
                   <a className="ipca_logo" href="http://www.ipca.pt/"></a>
                 </li>
                 <li>
                   <a className="camara_logo" href="https://www.cm-braga.pt/pt"></a>
                 </li>
-              </ul>
-              <ul>
                 <li>
                   <a className="invest_logo" href="http://investbraga.com/index/index.php"></a>
                 </li>
                 <li>
                   <a className="aiminho_logo" href="http://www.aiminho.pt/"></a>
                 </li>
+              </ul>
+              <ul className="powered_by">
+              <li>
+                <a className="alientech_logo" href="https://www.alientech.pt/"></a>
+              </li>
+              <li>
+                <a className="atw_logo" href="http://www.aiminho.pt/"></a>
+              </li>
+              </ul>
+              <ul className="patrocinadores">
+              <li>
+                <a className="ca_logo" href="http://www.credito-agricola.pt/CAI"></a>
+              </li>
               </ul>
               </div>
             </div>
